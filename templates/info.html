@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary Information</title>
+</head>
+<body>
+    <h1>Itinerary Information</h1>
+    
+    {% for itinerary in all_itineraries %}
+        <h2>{{ itinerary.destination }}</h2>
+        <p>Activities: {{ itinerary.activities }}</p>
+        <p>Cost Ratings: {{ itinerary['cost_ratings (1-5)'] }}</p>
+        <p>Popularity: {{ itinerary['popularity (1-10)'] }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
+

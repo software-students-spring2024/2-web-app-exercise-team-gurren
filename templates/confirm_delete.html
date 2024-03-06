@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Itinerary - Travel Itineraries</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Itinerary</h1>
+        <p>Are you sure you want to delete the itinerary for {{ destination }}?</p>
+        <form action="/delete/{{ destination }}" method="post">
+            <button type="submit">Delete</button>
+        </form>
+        <a href="/">Cancel</a>
+    </div>
+</body>
+</html>
