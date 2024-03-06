@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Travel Itineraries</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Search Destinations</h1>
+    <ul>
+        {% for destination in destinations %}
+            <li>{{ destination }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3e0ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the body full height of the viewport */
+}
+
+.container {
+    text-align: center; /* Center-align text */
+}
+
+h1 {
+    color: #000; /* Black text color */
+}
+
+p {
+    color: #000; /* Black text color */
+}
+
+button {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

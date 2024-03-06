@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Travel Itineraries</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../styles/styles.css') }}">
+</head>
+<body>
+    <h1>Recent Itineraries</h1>
+    <ul>
+        {% for itinerary in recent_itineraries %}
+            <li>{{ itinerary.destination }} - <a href="/delete/{{ itinerary.destination }}">Delete</a></li>
+        {% endfor %}
+    </ul>
+	<div class="button">
+    		<a href="/search">Search</a>
+    		<a href="/add">Add</a>
+    		<a href="/info">Info</a>
+    		<a href="/delete">Delete</a>
+	</div>
+</body>
+</html>
